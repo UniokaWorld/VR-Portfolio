@@ -8,16 +8,17 @@
 <body>
 <a-scene>
     <a-assets>
-		<img id="my-image" src="meisi.png">
-		<a-asset-item id="crate-obj" src="model.obj"></a-asset-item>
-        <a-asset-item id="crate-mtl" src="model.mtl"></a-asset-item>
+		<img id="meisi" src="meisi.png">
+		<img id="setumei" src="modelS.png">
+		<a-asset-item id="my-obj" src="model.obj"></a-asset-item>
     </a-assets>
 	<a-sky color="#90D7EC"></a-sky>
-    <a-image src="#my-image" width="2.5" height="1.5" position="0 2 -3.09"></a-image>
-	<a-box position="0 4 -3.6" width="7" height="0.5" depth="7" color="#4CC3D9"></a-box>
-	<a-box position="0 2 -3.6" width="2.5" height="4" color="#4CC3D9"></a-box>w
+    <a-image src="#meisi" width="2.5" height="1.5" position="0 2 -3.09"></a-image>
+	<a-image src="#setumei" width="1.2" height="0.7" rotation="-20 30 0" position="-2 1 -2.5"></a-image>
+	<a-box position="0 4 -3.6" width="5" height="0.5" depth="5" color="#B37D6D"></a-box>
+	<a-box position="0 2 -3.6" width="2.5" height="4" color="#B37D6D"></a-box>
     <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
-	<a-obj-model position="0 0.5 -3" src="#crate-obj"></a-obj-model>
+	<a-obj-model position="-2.4 0 -2.8" rotation="0 250 0" scale="1.5	1.5	1.5" src="#my-obj"></a-obj-model>
 </a-scene>
 </body>
 </html>
